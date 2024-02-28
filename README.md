@@ -1,2 +1,2 @@
-# Hospital_Management-_System
+# Hospital_Management_System
 Use to manage a Hospital 
