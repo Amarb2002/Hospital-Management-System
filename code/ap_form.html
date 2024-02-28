@@ -17,126 +17,126 @@
     <title> Dashboard Panel</title>
 </head>
 
-<body>
-    <nav>
-        <div class="logo-name">
-            <div class="logo-image">
-                <img src="../image/logo.png" alt="">
-            </div>
-
-            <span class="logo_name">My Hospital</span>
+<!-- <body> -->
+<nav>
+    <div class="logo-name">
+        <div class="logo-image">
+            <img src="../image/logo.png" alt="">
         </div>
 
-        <div class="menu-items">
-            <ul class="nav-links">
-                <li>
-                    <a href="dashbord.html">
-                        <i class="uil uil-estate"></i>
-                        <span class="link-name">Dahsboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="patient.html">
-                        <i class="uil uil-files-landscapes"></i>
-                        <span class="link-name">patient</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="uil uil-chart"></i>
-                        <span class="link-name">Appointments</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="doctors.html">
-                        <i class="uil uil-thumbs-up"></i>
-                        <span class="link-name">Doctors</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="staff.html">
-                        <i class="uil uil-comments"></i>
-                        <span class="link-name">Staff</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="lab_tests.html">
-                        <i class="uil uil-share"></i>
-                        <span class="link-name">Lab Tests</span>
-                    </a>
-                </li>
-            </ul>
+        <span class="logo_name">My Hospital</span>
+    </div>
 
-            <ul class="logout-mode">
-                <li>
-                    <a href="#">
-                        <i class="uil uil-signout"></i>
-                        <span class="link-name">Logout</span>
-                    </a>
-                </li>
+    <div class="menu-items">
+        <ul class="nav-links">
+            <li>
+                <a href="dashbord.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="patient.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">patient</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Appointments</span>
+                </a>
+            </li>
+            <li>
+                <a href="doctors.html">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Doctors</span>
+                </a>
+            </li>
+            <li>
+                <a href="staff.html">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Staff</span>
+                </a>
+            </li>
+            <li>
+                <a href="lab_tests.html">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Lab Tests</span>
+                </a>
+            </li>
+        </ul>
 
-                <li class="mode">
-                    <a href="#">
-                        <i class="uil uil-moon"></i>
-                        <span class="link-name">Dark Mode</span>
-                    </a>
+        <ul class="logout-mode">
+            <li>
+                <a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a>
+            </li>
 
-                    <div class="mode-toggle">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-            </ul>
+            <li class="mode">
+                <a href="#">
+                    <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                    <span class="switch"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="dashboard">
+    <div class="top">
+        <i class="uil uil-bars sidebar-toggle"></i>
+
+        <div class="search-box">
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="Search here...">
         </div>
-    </nav>
 
-    <section class="dashboard">
-        <div class="top">
-            <i class="uil uil-bars sidebar-toggle"></i>
+        <!--<img src="images/profile.jpg" alt="">-->
+    </div>
 
-            <div class="search-box">
-                <i class="uil uil-search"></i>
-                <input type="text" placeholder="Search here...">
-            </div>
-
-            <!--<img src="images/profile.jpg" alt="">-->
+    <header>
+        <h1>Appointment Request Form</h1>
+    </header>
+    <main>
+        <div class="title">
+            <i class="uil uil-tachometer-fast-alt"></i>
+            <span class="text">Aappointments</span>
         </div>
-
-        <header>
-            <h1>Appointment Request Form</h1>
-        </header>
-        <main>
-            <div class="title">
-                <i class="uil uil-tachometer-fast-alt"></i>
-                <span class="text">Aappointments</span>
+        <form id="appointment-form">
+            <div class="form-group">
+                <label class="data-title" for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
             </div>
-            <form id="appointment-form">
-                <div class="form-group">
-                    <label class="data-title" for="full-name">Full Name:</label>
-                    <input type="text" id="full-name" name="full-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="appointment-date">Preferred Appointment Date:</label>
-                    <input type="date" id="appointment-date" name="appointment-date" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message (optional):</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                </div>
-                <button type="submit">Request Appointment</button>
-            </form>
-        </main>
-        <script src="../am_temp/script/ap_form.js"></script>
-    </section>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="appointment-date">Preferred Appointment Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit">Request Appointment</button>
+        </form>
+    </main>
+    <script src="../am_temp/script/ap_form.js"></script>
+</section>
 
-    <script src="../am_temp/script/script.js"></script>
+<script src="../am_temp/script/script.js"></script>
 </body>
 
 </html>
